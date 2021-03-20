@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Connector_Phoenix_GMSTB)(type KiCad)(uri "C:/DATA/SourceControl/KiCAD Official/kicad-footprints/Connector_Phoenix_GMSTB.pretty")(options "")(descr ""))
+  (lib (name Connector_Phoenix_MSTB)(type KiCad)(uri "C:/DATA/SourceControl/KiCAD Official/kicad-footprints/Connector_Phoenix_MSTB.pretty")(options "")(descr ""))
+)

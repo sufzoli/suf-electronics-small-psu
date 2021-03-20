@@ -1,0 +1,251 @@
+EESchema Schematic File Version 2
+LIBS:suf
+LIBS:conn
+LIBS:device
+LIBS:jumper
+LIBS:power
+LIBS:transistors
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:suf_transformer
+LIBS:ps003-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "24 sep 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TRANSFORMER_ME.TRE-(10)-2 T1
+U 1 1 5421DE2D
+P 3650 3150
+F 0 "T1" H 3650 2875 40  0000 C CNN
+F 1 "ME.TRE-10" H 3650 3425 40  0000 C CNN
+F 2 "suf_transformer:TR_ME.TRE-10-2" H 3650 3150 60  0001 C CNN
+F 3 "~" H 3650 3150 60  0000 C CNN
+	1    3650 3150
+	1    0    0    1   
+$EndComp
+$Comp
+L BRIDGE_1 D1
+U 1 1 5421E9F9
+P 4175 2825
+F 0 "D1" H 4175 2825 40  0000 C CNN
+F 1 "DB107" H 3950 2625 40  0000 C CNN
+F 2 "suf_diode_bridge:DB-4" H 4175 2825 60  0001 C CNN
+F 3 "~" H 4175 2825 60  0000 C CNN
+	1    4175 2825
+	1    0    0    1   
+$EndComp
+$Comp
+L BRIDGE_1 D2
+U 1 1 5421EA08
+P 4175 3475
+F 0 "D2" H 4175 3475 40  0000 C CNN
+F 1 "DB107" H 3950 3275 40  0000 C CNN
+F 2 "suf_diode_bridge:DB-4" H 4175 3475 60  0001 C CNN
+F 3 "~" H 4175 3475 60  0000 C CNN
+	1    4175 3475
+	1    0    0    1   
+$EndComp
+$Comp
+L CP C1
+U 1 1 5421EA66
+P 4500 2975
+F 0 "C1" H 4500 2825 40  0000 C CNN
+F 1 "100uF/35V" H 4500 3125 40  0000 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 4500 2975 60  0001 C CNN
+F 3 "~" H 4500 2975 60  0000 C CNN
+	1    4500 2975
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C2
+U 1 1 5421EA77
+P 4500 3625
+F 0 "C2" H 4500 3475 40  0000 C CNN
+F 1 "100uF/35V" H 4500 3775 40  0000 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 4500 3625 60  0001 C CNN
+F 3 "~" H 4500 3625 60  0000 C CNN
+	1    4500 3625
+	0    1    1    0   
+$EndComp
+$Comp
+L 78L05 U1
+U 1 1 5421EAF5
+P 4925 2875
+F 0 "U1" H 5075 2679 60  0000 C CNN
+F 1 "78xx" H 4925 3075 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 4925 2875 60  0001 C CNN
+F 3 "~" H 4925 2875 60  0000 C CNN
+	1    4925 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L 78L05 U2
+U 1 1 5421EB04
+P 4925 3525
+F 0 "U2" H 5075 3329 60  0000 C CNN
+F 1 "78xx" H 4925 3725 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 4925 3525 60  0001 C CNN
+F 3 "~" H 4925 3525 60  0000 C CNN
+	1    4925 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5421EB13
+P 5350 2975
+F 0 "C3" H 5350 2825 40  0000 C CNN
+F 1 "1uF/50V" H 5350 3125 40  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5350 2975 60  0001 C CNN
+F 3 "~" H 5350 2975 60  0000 C CNN
+	1    5350 2975
+	0    1    1    0   
+$EndComp
+$Comp
+L C C4
+U 1 1 5421EB22
+P 5350 3625
+F 0 "C4" H 5350 3475 40  0000 C CNN
+F 1 "1uF/50V" H 5350 3775 40  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5350 3625 60  0001 C CNN
+F 3 "~" H 5350 3625 60  0000 C CNN
+	1    5350 3625
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_2 J2
+U 1 1 5421EC23
+P 5900 2975
+F 0 "J2" V 5850 2975 40  0000 C CNN
+F 1 "OUT1" V 5950 2975 40  0000 C CNN
+F 2 "suf_connector_ncw:CONN_NCW254-02S" H 5900 2975 60  0001 C CNN
+F 3 "" H 5900 2975 60  0000 C CNN
+	1    5900 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 J3
+U 1 1 5421EC32
+P 5900 3625
+F 0 "J3" V 5850 3625 40  0000 C CNN
+F 1 "OUT2" V 5950 3625 40  0000 C CNN
+F 2 "suf_connector_ncw:CONN_NCW254-02S" H 5900 3625 60  0001 C CNN
+F 3 "" H 5900 3625 60  0000 C CNN
+	1    5900 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 J1
+U 1 1 5421EC41
+P 3075 3150
+F 0 "J1" V 3025 3150 40  0000 C CNN
+F 1 "IN" V 3125 3150 40  0000 C CNN
+F 2 "suf_connector_ncw:CONN_NCW254-02S" H 3075 3150 60  0001 C CNN
+F 3 "" H 3075 3150 60  0000 C CNN
+	1    3075 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3825 3125 4175 3125
+Wire Wire Line
+	3825 3175 4175 3175
+Wire Wire Line
+	3825 3375 3825 3775
+Wire Wire Line
+	3825 3775 4175 3775
+Wire Wire Line
+	3875 3475 3875 3800
+Wire Wire Line
+	3875 3800 5550 3800
+Wire Wire Line
+	5350 3800 5350 3725
+Wire Wire Line
+	5325 3475 5550 3475
+Wire Wire Line
+	5350 3475 5350 3525
+Wire Wire Line
+	4925 3775 4925 3800
+Connection ~ 4925 3800
+Wire Wire Line
+	4500 3725 4500 3800
+Connection ~ 4500 3800
+Wire Wire Line
+	4475 3475 4525 3475
+Wire Wire Line
+	4500 3475 4500 3525
+Connection ~ 4500 3475
+Wire Wire Line
+	4500 2825 4500 2875
+Wire Wire Line
+	4475 2825 4525 2825
+Connection ~ 4500 2825
+Wire Wire Line
+	3875 2825 3875 3150
+Wire Wire Line
+	3875 3150 5550 3150
+Wire Wire Line
+	5350 3150 5350 3075
+Wire Wire Line
+	5325 2825 5550 2825
+Wire Wire Line
+	5350 2825 5350 2875
+Wire Wire Line
+	4925 3125 4925 3150
+Connection ~ 4925 3150
+Wire Wire Line
+	4500 3075 4500 3150
+Connection ~ 4500 3150
+Wire Wire Line
+	5550 3475 5550 3525
+Connection ~ 5350 3475
+Wire Wire Line
+	5550 3800 5550 3725
+Connection ~ 5350 3800
+Wire Wire Line
+	5550 3150 5550 3075
+Connection ~ 5350 3150
+Wire Wire Line
+	5550 2825 5550 2875
+Connection ~ 5350 2825
+Wire Wire Line
+	3425 3050 3475 3050
+Wire Wire Line
+	3425 3250 3475 3250
+Wire Wire Line
+	3825 2925 3825 2525
+Wire Wire Line
+	3825 2525 4175 2525
+$EndSCHEMATC

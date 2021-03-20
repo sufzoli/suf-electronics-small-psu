@@ -1,0 +1,16 @@
+Item	Qty	Reference(s)	Value	LibPart	Footprint	Supplier	Link	
+1	2	C1, C2	CP	Device:CP	Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm_P7.50mm	hqelektronika	https://hqelektronika.hu/passziv-alkatreszek/kondenzatorok/elektrolit-kondenzator/alacsony-impedancias-kondenzatorok/220025p-105esr-x-elko-2200uf-25v-105c-13x26-low-esr-wlr	2200uF/25V
+						Lomex	https://lomex.hu/hu/webshop/#/search,12-18-98/stype,1	3300uF/10V
+						hqelektronika	https://hqelektronika.hu/passziv-alkatreszek/kondenzatorok/elektrolit-kondenzator/alacsony-impedancias-kondenzatorok/470010p-105exr-h-elko-4700uf-10v-105c-13x26-low-esr-exr	4700uF/10V
+2	2	C3, C4	1uF	Device:C	Capacitors_SMD:C_0603_HandSoldering			
+3	2	C5, C6	10uF Tantal	Device:CP	Capacitors_Tantalum_SMD:CP_Tantalum_Case-D_EIA-7343-31_Hand			
+4	8	D1, D2, D3, D4, D5, D6, D7, D8	SS54 (SSx4)	Device:D	Diodes_SMD:D_SMB-SMC_Universal_Handsoldering	Lomex	https://lomex.hu/hu/webshop/#/search,83-02-41/stype,1	
+5	1	J1	PWR	conn:Conn_01x04	Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G_1x04_P5.00mm_Horizontal	Lomex	https://lomex.hu/hu/webshop/#/search,43-21-23/stype,1	
+6	1	J2	OUT	conn:Conn_01x04	Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G_1x04_P5.00mm_Horizontal			
+7	1	J3	PWR_LED	conn:Conn_01x02	Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight			
+8	1	R1	0	Device:R	Resistors_SMD:R_2010_HandSoldering	Lomex	https://lomex.hu/hu/webshop/#/search,81-05-04/stype,1	
+9	2	R2, R3	ADJ-DOWN / 0	Device:R	Resistors_SMD:R_0603_HandSoldering			
+10	2	R4, R5	ADJ-UP	Device:R	Resistors_SMD:R_0603_HandSoldering			
+11	1	R6	0 / L	Device:R	Resistors_SMD:R_2010_HandSoldering			
+12	1	R7	510	Device:R	Resistors_SMD:R_0603_HandSoldering			
+13	2	U1, U2	LM108x	regul:LM1084-3.3	TO_SOT_Packages_THT:TO-220-3_Vertical			

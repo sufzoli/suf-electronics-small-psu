@@ -1,0 +1,586 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D1
+U 1 1 5E131605
+P 3200 2500
+F 0 "D1" V 3075 2525 50  0000 L CNN
+F 1 "SS54 (SSx4)" H 2950 2375 50  0000 L CNN
+F 2 "Diodes_SMD:D_SMB-SMC_Universal_Handsoldering" H 3200 2500 50  0001 C CNN
+F 3 "~" H 3200 2500 50  0001 C CNN
+	1    3200 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5E131DAC
+P 3875 2900
+F 0 "C1" H 3993 2946 50  0000 L CNN
+F 1 "CP" H 3993 2855 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm_P7.50mm" H 3913 2750 50  0001 C CNN
+F 3 "~" H 3875 2900 50  0001 C CNN
+	1    3875 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L regul:LM1084-3.3 U1
+U 1 1 5E13293A
+P 4375 2300
+F 0 "U1" H 4375 2542 50  0000 C CNN
+F 1 "LM108x" H 4375 2451 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 4375 2550 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 4375 2300 50  0001 C CNN
+	1    4375 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5E133353
+P 5125 2925
+F 0 "C5" H 5243 2971 50  0000 L CNN
+F 1 "10uF Tantal" H 5243 2880 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-D_EIA-7343-31_Hand" H 5163 2775 50  0001 C CNN
+F 3 "~" H 5125 2925 50  0001 C CNN
+	1    5125 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E133E34
+P 4375 3000
+F 0 "R2" H 4445 3046 50  0000 L CNN
+F 1 "ADJ-DOWN / 0" V 4275 2725 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4305 3000 50  0001 C CNN
+F 3 "~" H 4375 3000 50  0001 C CNN
+	1    4375 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E1345BD
+P 4750 2625
+F 0 "R4" H 4820 2671 50  0000 L CNN
+F 1 "ADJ-UP" V 4650 2475 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4680 2625 50  0001 C CNN
+F 3 "~" H 4750 2625 50  0001 C CNN
+	1    4750 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5E134C58
+P 4750 3000
+F 0 "C3" H 4865 3046 50  0000 L CNN
+F 1 "1uF" H 4865 2955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4788 2850 50  0001 C CNN
+F 3 "~" H 4750 3000 50  0001 C CNN
+	1    4750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5E13688F
+P 4375 3375
+F 0 "#PWR01" H 4375 3125 50  0001 C CNN
+F 1 "GND" H 4380 3202 50  0000 C CNN
+F 2 "" H 4375 3375 50  0001 C CNN
+F 3 "" H 4375 3375 50  0001 C CNN
+	1    4375 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3875 3050 3875 3325
+Wire Wire Line
+	3875 3325 4375 3325
+Wire Wire Line
+	5125 3325 5125 3075
+Wire Wire Line
+	4375 3150 4375 3325
+Connection ~ 4375 3325
+Wire Wire Line
+	4375 3325 4750 3325
+Wire Wire Line
+	4375 3325 4375 3375
+Wire Wire Line
+	4750 3150 4750 3325
+Connection ~ 4750 3325
+Wire Wire Line
+	4750 3325 5125 3325
+Wire Wire Line
+	4375 2600 4375 2825
+$Comp
+L Device:D D5
+U 1 1 5E138006
+P 3525 2500
+F 0 "D5" V 3400 2525 50  0000 L CNN
+F 1 "SS54 (SSx4)" H 3275 2375 50  0000 L CNN
+F 2 "Diodes_SMD:D_SMB-SMC_Universal_Handsoldering" H 3525 2500 50  0001 C CNN
+F 3 "~" H 3525 2500 50  0001 C CNN
+	1    3525 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5E1385E7
+P 3200 3125
+F 0 "D2" V 3075 3150 50  0000 L CNN
+F 1 "SS54 (SSx4)" H 2950 3000 50  0000 L CNN
+F 2 "Diodes_SMD:D_SMB-SMC_Universal_Handsoldering" H 3200 3125 50  0001 C CNN
+F 3 "~" H 3200 3125 50  0001 C CNN
+	1    3200 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D6
+U 1 1 5E138F39
+P 3525 3125
+F 0 "D6" V 3400 3150 50  0000 L CNN
+F 1 "SS54 (SSx4)" H 3275 3000 50  0000 L CNN
+F 2 "Diodes_SMD:D_SMB-SMC_Universal_Handsoldering" H 3525 3125 50  0001 C CNN
+F 3 "~" H 3525 3125 50  0001 C CNN
+	1    3525 3125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3875 3325 3525 3325
+Wire Wire Line
+	3200 3325 3200 3275
+Connection ~ 3875 3325
+Wire Wire Line
+	3525 3275 3525 3325
+Connection ~ 3525 3325
+Wire Wire Line
+	3525 3325 3200 3325
+Wire Wire Line
+	3200 2650 3200 2825
+Wire Wire Line
+	3525 2650 3525 2700
+Wire Wire Line
+	4075 2300 3875 2300
+Wire Wire Line
+	3200 2300 3200 2350
+Wire Wire Line
+	3525 2350 3525 2300
+Connection ~ 3525 2300
+Wire Wire Line
+	3525 2300 3200 2300
+Wire Wire Line
+	3875 2750 3875 2300
+Connection ~ 3875 2300
+Wire Wire Line
+	3875 2300 3525 2300
+Wire Wire Line
+	4675 2300 4750 2300
+Wire Wire Line
+	5125 2300 5125 2775
+Wire Wire Line
+	4750 2775 4750 2825
+Wire Wire Line
+	4750 2475 4750 2300
+Connection ~ 4750 2300
+Wire Wire Line
+	4750 2300 5125 2300
+Wire Wire Line
+	4750 2825 4375 2825
+Connection ~ 4750 2825
+Wire Wire Line
+	4750 2825 4750 2850
+Connection ~ 4375 2825
+Wire Wire Line
+	4375 2825 4375 2850
+$Comp
+L conn:Conn_01x04 J1
+U 1 1 5E14227D
+P 2225 3700
+F 0 "J1" H 2143 4017 50  0000 C CNN
+F 1 "PWR" H 2143 3926 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G_1x04_P5.00mm_Horizontal" H 2225 3700 50  0001 C CNN
+F 3 "~" H 2225 3700 50  0001 C CNN
+	1    2225 3700
+	-1   0    0    -1  
+$EndComp
+Text GLabel 2925 2700 0    50   Input ~ 0
+AC1
+Text GLabel 2925 2825 0    50   Input ~ 0
+AC2
+Wire Wire Line
+	2925 2700 3525 2700
+Connection ~ 3525 2700
+Wire Wire Line
+	3525 2700 3525 2975
+Wire Wire Line
+	2925 2825 3200 2825
+Connection ~ 3200 2825
+Wire Wire Line
+	3200 2825 3200 2975
+Text GLabel 2500 3600 2    50   Input ~ 0
+AC1
+Text GLabel 2500 3700 2    50   Input ~ 0
+AC2
+Text GLabel 2500 3800 2    50   Input ~ 0
+AC3
+Text GLabel 2500 3900 2    50   Input ~ 0
+AC4
+Wire Wire Line
+	2425 3600 2500 3600
+Wire Wire Line
+	2425 3700 2500 3700
+Wire Wire Line
+	2425 3800 2500 3800
+Wire Wire Line
+	2425 3900 2500 3900
+$Comp
+L power:GND #PWR03
+U 1 1 5E1470EA
+P 4650 3800
+F 0 "#PWR03" H 4650 3550 50  0001 C CNN
+F 1 "GND" H 4655 3627 50  0000 C CNN
+F 2 "" H 4650 3800 50  0001 C CNN
+F 3 "" H 4650 3800 50  0001 C CNN
+	1    4650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR04
+U 1 1 5E14781D
+P 5100 3800
+F 0 "#PWR04" H 5100 3550 50  0001 C CNN
+F 1 "GNDA" H 5105 3627 50  0000 C CNN
+F 2 "" H 5100 3800 50  0001 C CNN
+F 3 "" H 5100 3800 50  0001 C CNN
+	1    5100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5E148078
+P 4875 3725
+F 0 "R6" V 4668 3725 50  0000 C CNN
+F 1 "0 / L" V 4759 3725 50  0000 C CNN
+F 2 "Resistors_SMD:R_2010_HandSoldering" V 4805 3725 50  0001 C CNN
+F 3 "~" H 4875 3725 50  0001 C CNN
+	1    4875 3725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 3800 4650 3725
+Wire Wire Line
+	4650 3725 4725 3725
+Wire Wire Line
+	5025 3725 5100 3725
+Wire Wire Line
+	5100 3725 5100 3800
+$Comp
+L Device:R R1
+U 1 1 5E149FE5
+P 4100 3725
+F 0 "R1" V 3893 3725 50  0000 C CNN
+F 1 "0" V 3984 3725 50  0000 C CNN
+F 2 "Resistors_SMD:R_2010_HandSoldering" V 4030 3725 50  0001 C CNN
+F 3 "~" H 4100 3725 50  0001 C CNN
+	1    4100 3725
+	0    1    1    0   
+$EndComp
+Text GLabel 3875 3725 0    50   Input ~ 0
+AC2
+Text GLabel 4325 3725 2    50   Input ~ 0
+AC3
+Wire Wire Line
+	3875 3725 3950 3725
+Wire Wire Line
+	4250 3725 4325 3725
+$Comp
+L Device:D D3
+U 1 1 5E14C504
+P 3200 4375
+F 0 "D3" V 3075 4400 50  0000 L CNN
+F 1 "SS54 (SSx4)" H 2950 4250 50  0000 L CNN
+F 2 "Diodes_SMD:D_SMB-SMC_Universal_Handsoldering" H 3200 4375 50  0001 C CNN
+F 3 "~" H 3200 4375 50  0001 C CNN
+	1    3200 4375
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5E14C50E
+P 3875 4775
+F 0 "C2" H 3993 4821 50  0000 L CNN
+F 1 "CP" H 3993 4730 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm_P7.50mm" H 3913 4625 50  0001 C CNN
+F 3 "~" H 3875 4775 50  0001 C CNN
+	1    3875 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L regul:LM1084-3.3 U2
+U 1 1 5E14C518
+P 4375 4175
+F 0 "U2" H 4375 4417 50  0000 C CNN
+F 1 "LM108x" H 4375 4326 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 4375 4425 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 4375 4175 50  0001 C CNN
+	1    4375 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C6
+U 1 1 5E14C522
+P 5125 4800
+F 0 "C6" H 5243 4846 50  0000 L CNN
+F 1 "10uF Tantal" H 5243 4755 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-D_EIA-7343-31_Hand" H 5163 4650 50  0001 C CNN
+F 3 "~" H 5125 4800 50  0001 C CNN
+	1    5125 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E14C52C
+P 4375 4875
+F 0 "R3" H 4445 4921 50  0000 L CNN
+F 1 "ADJ-DOWN / 0" V 4275 4600 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4305 4875 50  0001 C CNN
+F 3 "~" H 4375 4875 50  0001 C CNN
+	1    4375 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5E14C536
+P 4750 4500
+F 0 "R5" H 4820 4546 50  0000 L CNN
+F 1 "ADJ-UP" V 4650 4350 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4680 4500 50  0001 C CNN
+F 3 "~" H 4750 4500 50  0001 C CNN
+	1    4750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5E14C540
+P 4750 4875
+F 0 "C4" H 4865 4921 50  0000 L CNN
+F 1 "1uF" H 4865 4830 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4788 4725 50  0001 C CNN
+F 3 "~" H 4750 4875 50  0001 C CNN
+	1    4750 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR02
+U 1 1 5E14C54A
+P 4375 5250
+F 0 "#PWR02" H 4375 5000 50  0001 C CNN
+F 1 "GNDA" H 4380 5077 50  0000 C CNN
+F 2 "" H 4375 5250 50  0001 C CNN
+F 3 "" H 4375 5250 50  0001 C CNN
+	1    4375 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3875 4925 3875 5200
+Wire Wire Line
+	3875 5200 4375 5200
+Wire Wire Line
+	5125 5200 5125 4950
+Wire Wire Line
+	4375 5025 4375 5200
+Connection ~ 4375 5200
+Wire Wire Line
+	4375 5200 4750 5200
+Wire Wire Line
+	4375 5200 4375 5250
+Wire Wire Line
+	4750 5025 4750 5200
+Connection ~ 4750 5200
+Wire Wire Line
+	4750 5200 5125 5200
+Wire Wire Line
+	4375 4475 4375 4700
+$Comp
+L Device:D D7
+U 1 1 5E14C55F
+P 3525 4375
+F 0 "D7" V 3400 4400 50  0000 L CNN
+F 1 "SS54 (SSx4)" H 3275 4250 50  0000 L CNN
+F 2 "Diodes_SMD:D_SMB-SMC_Universal_Handsoldering" H 3525 4375 50  0001 C CNN
+F 3 "~" H 3525 4375 50  0001 C CNN
+	1    3525 4375
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5E14C569
+P 3200 5000
+F 0 "D4" V 3075 5025 50  0000 L CNN
+F 1 "SS54 (SSx4)" H 2950 4875 50  0000 L CNN
+F 2 "Diodes_SMD:D_SMB-SMC_Universal_Handsoldering" H 3200 5000 50  0001 C CNN
+F 3 "~" H 3200 5000 50  0001 C CNN
+	1    3200 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D8
+U 1 1 5E14C573
+P 3525 5000
+F 0 "D8" V 3400 5025 50  0000 L CNN
+F 1 "SS54 (SSx4)" H 3275 4875 50  0000 L CNN
+F 2 "Diodes_SMD:D_SMB-SMC_Universal_Handsoldering" H 3525 5000 50  0001 C CNN
+F 3 "~" H 3525 5000 50  0001 C CNN
+	1    3525 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3875 5200 3525 5200
+Wire Wire Line
+	3200 5200 3200 5150
+Connection ~ 3875 5200
+Wire Wire Line
+	3525 5150 3525 5200
+Connection ~ 3525 5200
+Wire Wire Line
+	3525 5200 3200 5200
+Wire Wire Line
+	3200 4525 3200 4700
+Wire Wire Line
+	3525 4525 3525 4575
+Wire Wire Line
+	4075 4175 3875 4175
+Wire Wire Line
+	3200 4175 3200 4225
+Wire Wire Line
+	3525 4225 3525 4175
+Connection ~ 3525 4175
+Wire Wire Line
+	3525 4175 3200 4175
+Wire Wire Line
+	3875 4625 3875 4175
+Connection ~ 3875 4175
+Wire Wire Line
+	3875 4175 3525 4175
+Wire Wire Line
+	4675 4175 4750 4175
+Wire Wire Line
+	5125 4175 5125 4650
+Wire Wire Line
+	4750 4650 4750 4700
+Wire Wire Line
+	4750 4350 4750 4175
+Connection ~ 4750 4175
+Wire Wire Line
+	4750 4175 5125 4175
+Wire Wire Line
+	4750 4700 4375 4700
+Connection ~ 4750 4700
+Wire Wire Line
+	4750 4700 4750 4725
+Connection ~ 4375 4700
+Wire Wire Line
+	4375 4700 4375 4725
+Text GLabel 2925 4575 0    50   Input ~ 0
+AC3
+Text GLabel 2925 4700 0    50   Input ~ 0
+AC4
+Wire Wire Line
+	2925 4575 3525 4575
+Connection ~ 3525 4575
+Wire Wire Line
+	3525 4575 3525 4850
+Wire Wire Line
+	2925 4700 3200 4700
+Connection ~ 3200 4700
+Wire Wire Line
+	3200 4700 3200 4850
+Text Notes 625  675  0    50   ~ 0
+Common ground supply with half wave rectification
+$Comp
+L conn:Conn_01x04 J2
+U 1 1 5E165F1F
+P 5650 3675
+F 0 "J2" H 5730 3667 50  0000 L CNN
+F 1 "OUT" H 5730 3576 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G_1x04_P5.00mm_Horizontal" H 5650 3675 50  0001 C CNN
+F 3 "~" H 5650 3675 50  0001 C CNN
+	1    5650 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 2300 5350 2300
+Wire Wire Line
+	5350 2300 5350 3575
+Wire Wire Line
+	5350 3575 5450 3575
+Connection ~ 5125 2300
+Wire Wire Line
+	5125 3325 5275 3325
+Wire Wire Line
+	5275 3325 5275 3675
+Wire Wire Line
+	5275 3675 5450 3675
+Connection ~ 5125 3325
+Wire Wire Line
+	5125 4175 5275 4175
+Wire Wire Line
+	5275 4175 5275 3775
+Wire Wire Line
+	5275 3775 5450 3775
+Connection ~ 5125 4175
+Wire Wire Line
+	5125 5200 5350 5200
+Wire Wire Line
+	5350 5200 5350 3875
+Wire Wire Line
+	5350 3875 5450 3875
+Connection ~ 5125 5200
+$Comp
+L Device:R R7
+U 1 1 5E174B39
+P 5650 4450
+F 0 "R7" H 5720 4496 50  0000 L CNN
+F 1 "510" H 5720 4405 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5580 4450 50  0001 C CNN
+F 3 "~" H 5650 4450 50  0001 C CNN
+	1    5650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x02 J3
+U 1 1 5E175F1E
+P 5950 4850
+F 0 "J3" H 6030 4842 50  0000 L CNN
+F 1 "PWR_LED" H 6030 4751 50  0000 L CNN
+F 2 "Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight" H 5950 4850 50  0001 C CNN
+F 3 "~" H 5950 4850 50  0001 C CNN
+	1    5950 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5275 4175 5650 4175
+Wire Wire Line
+	5650 4175 5650 4300
+Connection ~ 5275 4175
+Wire Wire Line
+	5650 4600 5650 4850
+Wire Wire Line
+	5650 4850 5750 4850
+Wire Wire Line
+	5750 4950 5650 4950
+Wire Wire Line
+	5650 4950 5650 5200
+Wire Wire Line
+	5650 5200 5350 5200
+Connection ~ 5350 5200
+$EndSCHEMATC
